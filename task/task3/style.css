@@ -12,11 +12,25 @@ p {
     text-shadow:15px 15px rgb(0, 255, 115);
     text-decoration-skip: ;
   }
-h2{
-    
 
+img{
+  width: 250px;
+  height: 250px;
+  background-color: rgb(158, 202, 223);
+  position: relative;
+  animation-name:img;
+  animation-duration: 4s;
+  animation-delay: 2s;
 }
-color1        bv                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+@keyframes img {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  75%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
 
 
