@@ -1,129 +1,124 @@
 <!DOCTYPE html>
-<html><!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>RX 100</title>
+  <title>sheela stark</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="task.css">
+  <link rel="stylesheet" href="princen.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px}    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f0d906
+
+;
+      height: 100%;
+    }    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;}
+    }
+    body{
+      overflow: hidden;
+    }
+    .sidenav{
+      height: 100vh;
+    }
+  </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-        <div class="container-fluid">
-            <img src="data:image/jpeg;base64,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" alt="Logo" style="width:50px;" class="rounded-pill">
-          <a class="navbar-brand" href="javascript:void(0)"> <pre>      sheela STRAK       </pre> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-          <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search" hi>
-              <button class="btn btn-primary" type="button">Search</button>
-            </form>
-          </div>
-          <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)"> <img src="whatsapp-logo-112413FAA7-seeklogo.com.png" alt="logo" style="width: 40px" class="rounded-pill"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)"> <img src="images.png" alt="logo" style="width: 40px" class="rounded-pill"></a>
-              <li class="nav-item">
-             <a class="nav-link" href="javascript:void(0)"> <img src="download (2).png" alt="logo" style="width: 40px" class="rounded-pill"></a>
-              </li>
-            </ul>
-        </div>
-      </nav>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline">menu</span>
-                    </a>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">information</span> </a>
-                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">contact number</span> 1 </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">item</span> 2 </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
-                        </li>
-                        <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">web site address</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">id number</span> 2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">user name</span> 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">mail id</span> 4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Client</span> </a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="dropdown pb-4">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="images.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                            <span class="d-none d-sm-inline mx-1">stark</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-danger text-small shadow">
-                            <li><a class="dropdown-item" href="#">jumbu<a></li>
-                            <li><a class="dropdown-item" href="#">kevin</a></li>
-                            <li><a class="dropdown-item" href="#">vishvaathil</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col py-3">
-                
-            </div>
-        </div>
+<body><nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="">sheela stark</a>
+    </div>  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-2 sidenav hidden-xs">
+      <h3><img src="david.png" alt="Logo" style="width:40px;" class="rounded-pill"> stark</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">sheela kutty</a></li>
+        <li><a href="#section2">Biriyani</a></li>
+        <li><a href="#section3">Chicken rice</a></li>
+        <li><a href="#section3">Chicken noodles</a></li>
+      </ul><br>
     </div>
-    
-    </body>
+    <div class="col-sm-9" id="Ajs4">
+      <div class="well">
+    <form class="search">
+      <input type="text" placeholder="search" class="search_input">
+      <i class="ri-search-2-line"></i>
+    </form>
+      </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-3" >
+          <div class="w3 well" id="AJS1">
+            <h4>Friday version</h4>
+            <p>I love stark  </p>
+          </div>
+        </div>
+        <div class="w3 col-sm-3">
+          <div class="well" id="AJS2">
+            <h4>Tony stark</h4>
+            <p>I love stark</p>
+          </div>
+        </div>
+        <div class="w3 col-sm-3">
+          <div class="well" id="AJS3">
+            <h4>Stark friday</h4>
+            <p>I love stark</p>
+          </div>
+        </div>
+            </div><table class="table table-striped table-dark">
+        <thead>
+    <tr>
+      <th>Nickname</th>
+      <th>Realname</th>
+      <th>Githubid</th>
+      <th>OPEN</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Ajaysheela</td>
+      <td>Sheela</td>
+      <td>sheela.com</td>
+      <td><a href="https://github.com/sheelacharles" target="_blank"><button type="button" class="btn btn-success">OPEN</button></a></td>
+    </tr>
+    <tr>
+      <td>Faizusahana</td>
+      <td>Sahana</td>
+      <td>Atchayadharshini.com</td>
+      <td><a href="https://github.com/jumbu003/GIT-Test" target="_blank"><button type="button" class="btn btn-success">OPEN</button></td>
+    </tr>
+    <tr>
+      <td>Mildrensubi</td>
+      <td>Subiebshiba</td>
+      <td>Subiebshiba.com</td>
+      <td><a href="https://github.com/MohamedAadhilM" target="_blank"><button type="button" class="btn btn-success">OPEN</button></a></td>
+    </tr>
+    <tr>
+        <td>devkavya</td>
+        <td>kavya</td>
+        <td>Kavya.com</td>
+        <td><a href="https://github.com/MohamedAadhilM" target="_blank"><button type="button" class="btn btn-success">OPEN</button></a></td>
+      </tr>
+    </tbody>
+    </table>    
+  </div> 
+  </div>
+        </div>
+      </div>
+    </div>
+
+</body>
 </html>
 
 
